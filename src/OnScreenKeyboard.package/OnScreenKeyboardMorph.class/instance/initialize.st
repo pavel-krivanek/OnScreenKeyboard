@@ -7,6 +7,7 @@ initialize
 	self toggleStickiness.
 		
 	self color: Color lightGray lighter lighter.
+	distance := 0.
 	
 	nextButtonPosition := 0@5.
 	

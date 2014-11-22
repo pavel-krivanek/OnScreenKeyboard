@@ -16,7 +16,10 @@
 		"pressedPosition",
 		"shiftButton",
 		"ctrlButton",
-		"altButton"
+		"altButton",
+		"kbButton",
+		"kbButtonPressed",
+		"distance"
 	],
 	"name" : "OnScreenKeyboardMorph",
 	"type" : "normal"

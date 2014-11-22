@@ -10,4 +10,8 @@ mouseDown: anEvent
 			pressedPosition := anEvent position.
 			b pressed: true]].
 	
+	pressedButton == kbButton ifTrue: [ 
+		kbButtonPressed := true.
+		 ].
+	
 	self changed.

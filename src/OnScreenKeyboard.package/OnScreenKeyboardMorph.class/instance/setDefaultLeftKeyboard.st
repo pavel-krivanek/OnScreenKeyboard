@@ -1,7 +1,7 @@
 as yet unclassified
 setDefaultLeftKeyboard
 
-	(self addButton: (self keystrokeActionFor: Character escape) text: 'Esc' color: Color lightGray lighter widthAspect: 1).
+	(self addButton: (self keystrokeActionFor: Character escape) text: 'Esc' color: Color lightGray lighter widthAspect: 1). 
 
 	(self addSimpleButton: $q text: 'Q' subtext: '! 1' )
 		actionAt: 6 putCharacter: $1;

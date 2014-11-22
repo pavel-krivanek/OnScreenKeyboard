@@ -55,5 +55,5 @@ setDefaultRightKeyboard
 	self addButton: (self keystrokeActionFor: Character arrowDown) text: 'down' color: Color lightGray lighter widthAspect: 1. 
 	self addButton: (self keystrokeActionFor: Character arrowRight) text: 'right' color: Color lightGray lighter widthAspect: 1. 
 
-	self addButton: Character backspace text: 'Kb' color: Color gray widthAspect: 1. 
+	kbButton := self addButton: nil text: 'Kb' color: Color darkGray widthAspect: 1. 
 	
