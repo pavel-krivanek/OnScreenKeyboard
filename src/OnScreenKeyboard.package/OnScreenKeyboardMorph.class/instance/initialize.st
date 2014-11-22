@@ -1,13 +1,12 @@
 as yet unclassified
 initialize
-
-	|  |
 	
 	super initialize.
 	self toggleStickiness.
 		
 	self color: Color lightGray lighter lighter.
 	distance := 0.
+	kbButtonPressed := false.
 	
 	nextButtonPosition := 0@5.
 	

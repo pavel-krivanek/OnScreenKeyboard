@@ -1,7 +1,7 @@
 as yet unclassified
 setDefaultRightKeyboard
 
-	(self addSimpleButton: $z text: 'Z' subtext: '^ 6' )
+	(self addSimpleButton: $y text: 'Y' subtext: '^ 6' )
 		actionAt: 6 putCharacter: $6;
 		actionAt: 8 putCharacter: $^.
 	(self addSimpleButton: $u text: 'U' subtext: '& 7' )
