@@ -1,8 +1,7 @@
 as yet unclassified
 setDefaultLeftKeyboard
 
-	(self addButton: (self keystrokeActionFor: Character tab) text: 'Tab' color: Color lightGray lighter widthAspect: 1) 
-		actionAt: 2 putCharacter: Character escape.
+	(self addButton: (self keystrokeActionFor: Character escape) text: 'Esc' color: Color lightGray lighter widthAspect: 1).
 
 	(self addSimpleButton: $q text: 'Q' subtext: '! 1' )
 		actionAt: 6 putCharacter: $1;
@@ -23,24 +22,28 @@ setDefaultLeftKeyboard
 		
 	self nextRow.
 
-	self addButton: (self keystrokeActionFor: Character cr) text: '^' color: Color lightGray lighter widthAspect: 1.5.
-
+	(self addButton: (self keystrokeActionFor: Character tab) text: 'Tab' color: Color lightGray lighter widthAspect: 1.5).
+		
 	(self addSimpleButton: $a text: 'A' subtext: '|' )
 		actionAt: 8 putCharacter: $|.
-	(self addSimpleButton: $s text: 'S' subtext: '\' )
-		actionAt: 8 putCharacter: $\.
-	(self addSimpleButton: $d text: 'D' subtext: '/' )
+	(self addSimpleButton: $s text: 'S' subtext: ''' `' )
+		actionAt: 6 putCharacter: $`;
+		actionAt: 8 putCharacter: $'.
+	(self addSimpleButton: $d text: 'D' subtext: '/ \' )
+		actionAt: 6 putCharacter: $\;
 		actionAt: 8 putCharacter: $/.
-	(self addSimpleButton: $f text: 'F' subtext: '#' )
+	(self addSimpleButton: $f text: 'F' subtext: '# §' )
+		actionAt: 6 putCharacter: $§;
 		actionAt: 8 putCharacter: $#.
-	(self addSimpleButton: $g text: 'G' subtext: '? _' )
+	(self addSimpleButton: $g text: 'G' subtext: '?' )
 		actionAt: 6 putCharacter: $_;
 		actionAt: 8 putCharacter: $?.
 	
 	self nextRow.
 
-	self addButton: (self keystrokeActionFor: $,) text: ',' color: Color lightGray lighter widthAspect: 1. 
-	self addButton: (self keystrokeActionFor:  $.) text: '.' color: Color lightGray lighter widthAspect: 1. 
+	self addButton: [ self swapShift ] text: 'Shift' color: Color lightGray lighter widthAspect: 2/3. 
+	self addButton: [ self swapCtrl ] text: 'Ctrl' color: Color lightGray lighter widthAspect: 2/3. 
+	self addButton: [ self swapAlt ] text: 'Alt' color: Color lightGray lighter widthAspect: 2/3. 
 	
 	(self addSimpleButton: $y text: 'Y' subtext: ':' )
 		actionAt: 8 putCharacter: $:.
@@ -52,9 +55,12 @@ setDefaultLeftKeyboard
 	(self addSimpleButton: $v text: 'V' subtext: '>' )
 		actionAt: 8 putCharacter: $>.
 		
-	self nextRow.
+	self nextRow. 
 
-	self addButton: (self keystrokeActionFor: Character cr) text: '^' color: Color lightGray lighter widthAspect: 1. 
-	self addButton: Character space text: '.?123' color: Color lightGray lighter widthAspect: 3. 
+	self addButton: (self keystrokeActionFor: Character delete) text: 'Del' color: Color lightGray lighter widthAspect: 1. 
+	self addButton: (self keystrokeActionFor: Character insert) text: 'Ins' color: Color lightGray lighter widthAspect: 1. 
+	self addButton: (self keystrokeActionFor: Character home) text: 'Home' color: Color lightGray lighter widthAspect: 1. 
+	self addButton: (self keystrokeActionFor: Character end) text: 'End' color: Color lightGray lighter widthAspect: 1. 
+
 	self addButton: (self keystrokeActionFor: Character space) text: ' ' color: Color white widthAspect: 2.5 .
 

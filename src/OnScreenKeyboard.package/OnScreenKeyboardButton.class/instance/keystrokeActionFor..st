@@ -1,5 +1,4 @@
 actions
 keystrokeActionFor: aCharacter
 
-	 ^ [:mod | 
-		ActiveHand simulateKeyStroke: aCharacter]
+	 ^ morph keystrokeActionFor: aCharacter

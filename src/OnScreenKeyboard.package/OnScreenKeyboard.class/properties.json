@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parts"
+		"alt",
+		"ctrl",
+		"parts",
+		"shift"
 	],
 	"name" : "OnScreenKeyboard",
 	"type" : "normal"

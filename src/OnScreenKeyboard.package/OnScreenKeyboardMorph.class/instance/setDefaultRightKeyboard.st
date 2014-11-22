@@ -25,10 +25,10 @@ setDefaultRightKeyboard
 		actionAt: 8 putCharacter: $+.
 	(self addSimpleButton: $j text: 'J' subtext: '-' )
 		actionAt: 8 putCharacter: $-.
-	(self addSimpleButton: $k text: 'K' subtext: '{' )
+	(self addSimpleButton: $k text: 'K' subtext: '[ {' )
 		actionAt: 6 putCharacter: ${;
 		actionAt: 8 putCharacter: $[.
-	(self addSimpleButton: $l text: 'L' subtext: '}' )
+	(self addSimpleButton: $l text: 'L' subtext: '] }' )
 		actionAt: 6 putCharacter: $};
 		actionAt: 8 putCharacter: $].
 
@@ -36,8 +36,8 @@ setDefaultRightKeyboard
 	self addButton: (self keystrokeActionFor: Character cr) text: 'Enter' color: Color lightGray lighter widthAspect: 1.5 .
 	self nextRow.
 
-	(self addSimpleButton: $b text: 'B' subtext: '{' )
-		actionAt: 8 putCharacter: ${.
+	(self addSimpleButton: $b text: 'B' subtext: ';' )
+		actionAt: 8 putCharacter: $;.
 	(self addSimpleButton: $n text: 'N' subtext: ',' )
 		actionAt: 8 putCharacter: $,.
 	(self addSimpleButton: $m text: 'M' subtext: '.' )

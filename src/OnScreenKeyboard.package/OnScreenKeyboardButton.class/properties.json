@@ -6,12 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"text",
-		"subtext",
-		"rect",
+		"morph",
 		"actions",
-		"pressed",
 		"backgroundColor",
+		"pressed",
+		"rect",
+		"subtext",
+		"text",
 		"textColor"
 	],
 	"name" : "OnScreenKeyboardButton",

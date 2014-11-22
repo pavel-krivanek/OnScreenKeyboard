@@ -21,6 +21,6 @@ pressedButton = b ifTrue: [
 	pressedButton ifNotNil: [  
 		action := pressedButton actionFor: (anEvent position - self bounds topLeft).
 		action ifNotNil: [ 
-			action value: nil ]
+			action cull: nil ]
 	].
 	self releaseAllButtons.

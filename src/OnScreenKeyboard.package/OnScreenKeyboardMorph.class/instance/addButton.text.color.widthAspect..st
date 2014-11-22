@@ -6,6 +6,7 @@ addButton: aBlock text: aText color: aColor widthAspect: widthAspect
 	w := self defaultButtonSize x* widthAspect.
 	
 	button := OnScreenKeyboardButton new.
+	button morph: self.
 	button actions at: 5 put: aBlock.
 	button text: aText.
 	button backgroundColor: aColor.
