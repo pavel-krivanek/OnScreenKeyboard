@@ -24,3 +24,4 @@ pressedButton = b ifTrue: [
 			action cull: self ]
 	].
 	self releaseAllButtons.
+	kbButtonPressed := false.
