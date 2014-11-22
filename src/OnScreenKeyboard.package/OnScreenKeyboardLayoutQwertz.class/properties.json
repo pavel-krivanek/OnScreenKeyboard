@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OnScreenKeyboardLayout",
+	"category" : "OnScreenKeyboard",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OnScreenKeyboardLayoutQwertz",
+	"type" : "normal"
+}

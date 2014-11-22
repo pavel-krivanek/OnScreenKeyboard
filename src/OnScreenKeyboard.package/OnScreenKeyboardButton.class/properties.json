@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "OnScreenKeyboard",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text",
+		"subtext",
+		"rect",
+		"actions",
+		"pressed",
+		"backgroundColor",
+		"textColor"
+	],
+	"name" : "OnScreenKeyboardButton",
+	"type" : "normal"
+}

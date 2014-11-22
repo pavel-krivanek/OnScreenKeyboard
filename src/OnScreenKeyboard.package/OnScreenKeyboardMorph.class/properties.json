@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "OnScreenKeyboard",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"keyboard",
+		"buttons",
+		"nextButtonPosition",
+		"allButtonsWidth",
+		"allButtonsHeight",
+		"alignment",
+		"pressedButton",
+		"pressedPosition"
+	],
+	"name" : "OnScreenKeyboardMorph",
+	"type" : "normal"
+}
