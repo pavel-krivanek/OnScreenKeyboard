@@ -1,10 +1,10 @@
 as yet unclassified
 keystrokeActionFor: aCharacter
 
-	 ^ [:mod | 
+	 ^ [:aButton | 
 		| char |
 		char := aCharacter.
-		shift ifTrue: [ char := KMModifier shift + char. ].
+		shift ifTrue: [ char := KMModifier shift + char asUppercase. ].
 		ctrl ifTrue: [ char := KMModifier ctrl + char. ].
 		alt ifTrue: [ char := KMModifier alt + char. ].
 

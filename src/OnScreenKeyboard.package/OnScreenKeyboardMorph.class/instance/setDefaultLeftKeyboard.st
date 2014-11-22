@@ -41,9 +41,9 @@ setDefaultLeftKeyboard
 	
 	self nextRow.
 
-	self addButton: [ self swapShift ] text: 'Shift' color: Color lightGray lighter widthAspect: 2/3. 
-	self addButton: [ self swapCtrl ] text: 'Ctrl' color: Color lightGray lighter widthAspect: 2/3. 
-	self addButton: [ self swapAlt ] text: 'Alt' color: Color lightGray lighter widthAspect: 2/3. 
+	shiftButton := self addButton: [ self swapShift ] text: 'Shift' color: Color lightGray lighter widthAspect: 2/3. 
+	ctrlButton := self addButton: [ self swapCtrl ] text: 'Ctrl' color: Color lightGray lighter widthAspect: 2/3. 
+	altButton := self addButton: [ self swapAlt ] text: 'Alt' color: Color lightGray lighter widthAspect: 2/3. 
 	
 	(self addSimpleButton: $y text: 'Y' subtext: ':' )
 		actionAt: 8 putCharacter: $:.

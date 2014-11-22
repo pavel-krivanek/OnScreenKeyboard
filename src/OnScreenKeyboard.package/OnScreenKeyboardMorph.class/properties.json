@@ -13,7 +13,10 @@
 		"allButtonsHeight",
 		"alignment",
 		"pressedButton",
-		"pressedPosition"
+		"pressedPosition",
+		"shiftButton",
+		"ctrlButton",
+		"altButton"
 	],
 	"name" : "OnScreenKeyboardMorph",
 	"type" : "normal"
