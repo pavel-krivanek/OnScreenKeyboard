@@ -23,7 +23,8 @@ setDefaultLeftKeyboard
 
 	(self addButton: (self keystrokeActionFor: Character tab) text: 'Tab' color: Color lightGray lighter widthAspect: 1.5).
 		
-	(self addSimpleButton: $a text: 'A' subtext: '|' )
+	(self addSimpleButton: $a text: 'A' subtext: '| @' )
+		actionAt: 6 putCharacter: $@;
 		actionAt: 8 putCharacter: $|.
 	(self addSimpleButton: $s text: 'S' subtext: ''' `' )
 		actionAt: 6 putCharacter: $`;
